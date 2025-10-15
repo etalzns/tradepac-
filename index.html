@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TRADEPAC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+
+        <!-- Top Bar -->
+        <div class="top-bar d-flex align-items-center justify-content-between px-3 py-2 bg-white w-100">
+            <!-- Logo -->
+            <div class="d-flex align-items-center">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <img src="img/TRADEPAC-Logo.jpg" alt="Dynacore Logo" height="60" />
+                </a>
+            </div>
+
+            <!-- Search Bar -->
+            <form class="d-flex search-bar mx-auto" onsubmit="return false;">
+                <input id="searchInput" class="form-control" type="search" placeholder="Search for products ..."
+                    aria-label="Search" />
+                <button class="btn btn-pink ms-2" id="searchBtn">Search</button>
+            </form>
+
+            <!-- Login & Cart -->
+            <div class="d-flex align-items-center gap-4 login-cart">
+                <div class="icon-text text-center text-purple">
+                    <i class="bi bi-person-circle fs-4"></i><br />
+                    <small>Login</small><br />
+                    <small>Account</small>
+                </div>
+                <div class="icon-text text-center position-relative text-purple cart-icon">
+                    <i class="bi bi-cart3 fs-4"></i>
+                    <span
+                        class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                        id="cartCount">0</span><br />
+                    <small>Your Cart</small><br />
+                    <small>$<span id="cartTotal">0.00</span></small>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-main bg-purple px-3">
+            <div class="container-fluid px-0">
+                <!-- Hamburger toggler -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2 text-white"></i>
+                </button>
+
+                <!-- Nav links -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold text-white">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-flex align-items-center">
+                                <i class="bi bi-list me-1"></i> SHOP BY PRODUCT
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="motherboard.html" class="nav-link">
+                                MOTHERBOARD
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="processor.html" class="nav-link">
+                                PROCESSOR
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="datastorage.html" class="nav-link">DATA STORAGE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="graphicscare.html" class="nav-link">GRAPHICS CARE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="memory.html" class="nav-link">MEMORY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="software.html" class="nav-link">SOFTWARE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <img src="img/banner.JPG" width="100%">
+    </header>
+    <main>
+        <h2>Top Categories</h2>
+
+        <div class="slider-container">
+            <!-- Left arrow scrolls slider left -->
+            <div class="arrow left"
+                onclick="document.querySelector('.slider').scrollBy({left: -200, behavior: 'smooth'})">&#10094;</div>
+
+            <!-- Right arrow scrolls slider right -->
+            <div class="arrow right"
+                onclick="document.querySelector('.slider').scrollBy({left: 200, behavior: 'smooth'})">&#10095;</div>
+
+            <!-- Scrollable container -->
+            <div class="slider">
+                <div class="product">
+                    <img src="img/bundlesystemamd.jpeg" alt="AMD Bundle" />
+                    <div class="product-name-overlay">AMD Bundle</div>
+                </div>
+                <div class="product">
+                    <img src="img/bundlesystemintel.jpeg" alt="Intel Bundle" />
+                    <div class="product-name-overlay">Intel Bundle</div>
+                </div>
+                <div class="product">
+                    <img src="img/casingfan.jpg" alt="Casing Fan" />
+                    <div class="product-name-overlay">Casing Fan</div>
+                </div>
+                <div class="product">
+                    <img src="img/laptop.png" alt="Laptop" />
+                    <div class="product-name-overlay">Laptop</div>
+                </div>
+                <div class="product">
+                    <img src="img/motherboard.jpg" alt="Motherboard" />
+                    <div class="product-name-overlay">Motherboard</div>
+                </div>
+                <div class="product">
+                    <img src="img/Memory.jpg" alt="Memory" />
+                    <div class="product-name-overlay">Memory</div>
+                </div>
+                <div class="product">
+                    <img src="img/datastorage.jpeg" alt="Data Storage" />
+                    <div class="product-name-overlay">Data Storage</div>
+                </div>
+                <div class="product">
+                    <img src="img/graphicscard.jpg" alt="Graphics Card" />
+                    <div class="product-name-overlay">Graphics Card</div>
+                </div>
+
+            </div>
+        </div>
+        <h2>Top Products</h2>
+        <div class="slider-container">
+            <div class="arrow left"
+                onclick="this.parentElement.querySelector('.slider').scrollBy({left: -200, behavior: 'smooth'})">
+                &#10094;</div>
+
+            <div class="arrow right"
+                onclick="this.parentElement.querySelector('.slider').scrollBy({left: 200, behavior: 'smooth'})">&#10095;
+            </div>
+
+            <div class="slider">
+                <div class="product">
+                    <img src="img/prod1.png" alt="TECWARE Timber M 4 Fans (Black)" />
+                    <div class="product-name-overlay">TECWARE Timber M 4 Fans (Black)</div>
+                    <div class="price">$65.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/prod2.png" alt="MONTECH HS02 White (TG Front)" />
+                    <div class="product-name-overlay">MONTECH HS02 White (TG Front)</div>
+                    <div class="price">$99.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/prod3.png" alt="TECWARE Nexus Air Steel Black" />
+                    <div class="product-name-overlay">TECWARE Nexus Air Steel Black</div>
+                    <div class="price">$65.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/prod4.jpeg"
+                        alt="Corsair iCUE 4000D Airflow RGB Tempered Glass Mid-Tower Case True White - " />
+                    <div class="product-name-overlay">Corsair iCUE 4000D Airflow RGB...</div>
+                    <div class="price">$210.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/prod5.jpg" alt="TMPG B650 EDGE WIFI" />
+                    <div class="product-name-overlay">MPG B650 EDGE WIFI</div>
+                    <div class="price">$430.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/prod6.jpg" alt="Cras V RGB DDR5 6400 CL32 (2x16GB)" />
+                    <div class="product-name-overlay">Cras V RGB DDR5 6400 CL32 (2x16GB)</div>
+                    <div class="price">$178.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/prod7.jpg" alt="FRACTAL DESIGN North XL Charcoal Black - FD-C-NOR1X-01" />
+                    <div class="product-name-overlay">FRACTAL DESIGN North XL Charcoal...</div>
+                    <div class="price">$259.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/prod8.jpg" alt="MONTECH KING 95 Black" />
+                    <div class="product-name-overlay">MONTECH KING 95 Black</div>
+                    <div class="price">$139.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/prod9.jpg" alt="ARCTIC P12 Max PWM (Black)" />
+                    <div class="product-name-overlay">ARCTIC P12 Max PWM (Black)</div>
+                    <div class="price">$18.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/prod10.png" alt="ASUS AC2400 DUAL BAND ROUTER" />
+                    <div class="product-name-overlay">ASUS AC2400 DUAL BAND ROUTER</div>
+                    <div class="price">$288.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <h2>Top Brands</h2>
+        <div class="brands-slider-container slider-container">
+            <!-- Left arrow for brands -->
+            <div class="arrow left" onclick="scrollBrands(-1)">&#10094;</div>
+
+            <!-- Right arrow for brands -->
+            <div class="arrow right" onclick="scrollBrands(1)">&#10095;</div>
+
+            <div class="slider brands-slider">
+                <div class="brand">
+                    <img src="img/cooler-500x500.png" alt="Cooler Master">
+                    <div class="brand-name">Cooler Master</div>
+                </div>
+                <div class="brand">
+                    <img src="img/mini-500x500.png" alt="Mini ITX">
+                    <div class="brand-name">Mini ITX</div>
+                </div>
+                <div class="brand">
+                    <img src="img/a4tech-logo-500x500.png" alt="A4TECH">
+                    <div class="brand-name">A4TECH</div>
+                </div>
+                <div class="brand">
+                    <img src="img/adata-500x500.jpg" alt="Adata">
+                    <div class="brand-name">Adata</div>
+                </div>
+                <div class="brand">
+                    <img src="img/amd-logo-500x500.png" alt="AMD">
+                    <div class="brand-name">AMD</div>
+                </div>
+                <div class="brand">
+                    <img src="img/apple_logo-500x500.jpg" alt="Apple">
+                    <div class="brand-name">Apple</div>
+                </div>
+                <div class="brand">
+                    <img src="img/arctic-logo-500x500.png" alt="ARCTIC">
+                    <div class="brand-name">ARCTIC</div>
+                </div>
+                <div class="brand">
+                    <img src="img/asr-500x500.jpg" alt="ASRock">
+                    <div class="brand-name">ASRock</div>
+                </div>
+                <div class="brand">
+                    <img src="img/asus-500x500.jpg" alt="Asus">
+                    <div class="brand-name">Asus</div>
+                </div>
+                <div class="brand">
+                    <img src="img/ben-500x500.jpg" alt="BenQ">
+                    <div class="brand-name">BenQ</div>
+                </div>
+                <div class="brand">
+                    <img src="img/bio-500x500.jpg" alt="BioStar">
+                    <div class="brand-name">BioStar</div>
+                </div>
+                 <div class="brand">
+                    <img src="img/canon_logo-500x500.jpg" alt="Canon">
+                    <div class="brand-name">Canon</div>
+                </div>
+                <div class="brand">
+                    <img src="img/cor-500x500.png" alt="Corsair">
+                    <div class="brand-name">Corsair</div>
+                </div>
+                <div class="brand">
+                    <img src="img/crucial-logo-500x500.png" alt="Crucial">
+                    <div class="brand-name">Crucial</div>
+                </div>
+                <div class="brand">
+                    <img src="img/deepcool-logo-500x500.png" alt="Deep Cool">
+                    <div class="brand-name">Deep Cool</div>
+                </div>
+                <div class="brand">
+                    <img src="img/evga_logo-500x500.png" alt="EVGA">
+                    <div class="brand-name">EVGA</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-column">
+                <h3>About TRADEPAC Tech</h3>
+                <p class="about-text">
+                    TRADEPAC is a Singapore-based computer hardware retailer offering a wide range of quality PCs,
+                    laptops, and components at competitive prices. We pride ourselves on excellent customer service and
+                    expert advice to help you build or upgrade your perfect setup.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>QUICK SHOP</h3>
+                <ul>
+                    <li><a href="#">Shop All</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Desktops</a></li>
+                    <li><a href="#">PC Parts</a></li>
+                    <li><a href="#">Monitors</a></li>
+                    <li><a href="#">Peripherals</a></li>
+                    <li><a href="#">Networking</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>SUPPORT</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Warranty</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <hr class="footer-hr" />
+
+        <div class="footer-copy">
+            © TRADEPAC. 2025
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

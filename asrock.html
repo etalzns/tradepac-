@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TRADEPAC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+
+        <!-- Top Bar -->
+        <div class="top-bar d-flex align-items-center justify-content-between px-3 py-2 bg-white w-100">
+            <!-- Logo -->
+            <div class="d-flex align-items-center">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <img src="img/TRADEPAC-Logo.jpg" alt="Dynacore Logo" height="60" />
+                </a>
+            </div>
+
+            <!-- Search Bar -->
+            <form class="d-flex search-bar mx-auto" onsubmit="return false;">
+                <input id="searchInput" class="form-control" type="search" placeholder="Search for products ..."
+                    aria-label="Search" />
+                <button class="btn btn-pink ms-2" id="searchBtn">Search</button>
+            </form>
+
+            <!-- Login & Cart -->
+            <div class="d-flex align-items-center gap-4 login-cart">
+                <div class="icon-text text-center text-purple">
+                    <i class="bi bi-person-circle fs-4"></i><br />
+                    <small>Login</small><br />
+                    <small>Account</small>
+                </div>
+                <div class="icon-text text-center position-relative text-purple cart-icon">
+                    <i class="bi bi-cart3 fs-4"></i>
+                    <span
+                        class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                        id="cartCount">0</span><br />
+                    <small>Your Cart</small><br />
+                    <small>$<span id="cartTotal">0.00</span></small>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-main bg-purple px-3">
+            <div class="container-fluid px-0">
+                <!-- Hamburger toggler -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2 text-white"></i>
+                </button>
+
+                <!-- Nav links -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold text-white">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-flex align-items-center">
+                                <i class="bi bi-list me-1"></i> SHOP BY PRODUCT
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="motherboard.html" class="nav-link">
+                                MOTHERBOARD
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="processor.html" class="nav-link">
+                                PROCESSOR
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="datastorage.html" class="nav-link">DATA STORAGE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="graphicscare.html" class="nav-link">GRAPHICS CARE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="memory.html" class="nav-link">MEMORY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="software.html" class="nav-link">SOFTWARE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="amd.html">AMD</a>
+                <span>/</span>
+                <a href="amd 5000.html">amd 5000</a>
+                <span>/</span>
+                <a href="asrock.html">AsRock</a>
+            </nav>
+
+
+            <h2>AsRock</h2>
+
+           <div class="products-container">
+  <div class="product">
+    <img src="img/B550M WiFi SE(M1)-300x300.png" alt="ASRock B550M WIFI SE" />
+    <div class="product-name-overlay">ASRock B550M WIFI SE</div>
+    <div class="price">$145.00</div>
+    <button class="add-to-cart-btn">Add to Cart</button>
+  </div>
+  
+  <div class="product">
+    <img src="img/ASRock DESKMINI X300-300x300.png" alt="ASRock DESKMINI X300 Barebones" />
+    <div class="product-name-overlay">ASRock DESKMINI X300 Barebones</div>
+    <div class="price">$215.00</div>
+    <button class="add-to-cart-btn">Add to Cart</button>
+  </div>
+  
+  <div class="product">
+    <img src="img/ASRock X370M-HDV R4.0-500x500.jpg" alt="ASRock X370M-HDV R4.0" />
+    <div class="product-name-overlay">ASRock X370M-HDV R4.0</div>
+    <div class="price">$98.00</div>
+    <button class="add-to-cart-btn">Add to Cart</button>
+  </div>
+</div>
+
+
+
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer-column">
+                    <h3>About TRADEPAC Tech</h3>
+                    <p class="about-text">
+                        TRADEPAC is a Singapore-based computer hardware retailer offering a wide range of quality PCs,
+                        laptops, and components at competitive prices. We pride ourselves on excellent customer service
+                        and
+                        expert advice to help you build or upgrade your perfect setup.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>QUICK SHOP</h3>
+                    <ul>
+                        <li><a href="#">Shop All</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Desktops</a></li>
+                        <li><a href="#">PC Parts</a></li>
+                        <li><a href="#">Monitors</a></li>
+                        <li><a href="#">Peripherals</a></li>
+                        <li><a href="#">Networking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>SUPPORT</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <hr class="footer-hr" />
+
+            <div class="footer-copy">
+                © TRADEPAC. 2025
+            </div>
+        </footer>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
